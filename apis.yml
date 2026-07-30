@@ -1,4 +1,16 @@
 aid: mango-insurance
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mango-insurance.png
 name: Mango Insurance
 description: Mango Insurance is a company surfaced as a portfolio company of 500-global and added to the
   API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
@@ -11,7 +23,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 apis: []
@@ -21,5 +33,19 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/mango-insurance-domain-security.yml
 - type: Website
   url: https://papaya.asia
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
+  note: >-
+    Website papaya.asia (Papaya InsurTech) advertises OpenAPI/SDKs/MCP but the
+    API host api.papaya.asia does not resolve (no public API surface); no
+    security.txt or well-known documents found. Name/website mismatch (stub
+    named "Mango Insurance", site is Papaya) left unresolved - web-search
+    budget exhausted, so no misattribution made. Only the mechanical
+    domain-security probe of papaya.asia yielded a real artifact.
